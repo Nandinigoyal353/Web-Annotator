@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Web Annotator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 380px;
+        margin: 0;
+        padding: 17px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+      }
+      h1 {
+        font-size: 18px;
+        color:rgb(249, 86, 86);
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #search-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+      }
+      li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background: #fff8f8;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 11px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        grid-gap: 5px;
+      }
+      .annotation-details {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 5px;
+        align-items: center;
+      }
+      .delete-button {
+        background-color: #ff5555;
+        color: #ffffff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        align-self: start;
+      }
+      .delete-button:hover {
+        background-color: #ff4500;
+      }
+    </style>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Saved Annotations</h1>
+    <input type="text" id="search-input" placeholder="Search annotations..." />
+    <ul id="annotations-list"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html> 
+
